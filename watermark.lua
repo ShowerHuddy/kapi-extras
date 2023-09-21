@@ -36,7 +36,7 @@ ImageLabel.ImageTransparency = 1.000
 
 -- Scripts:
 
-local function HVRVRJ_fake_script() -- Background.LocalScript 
+local function ITVYTCT_fake_script() -- Background.LocalScript 
 	local script = Instance.new('LocalScript', Background)
 
 	local copy = "discord.gg/bwYwNrKpwJ"
@@ -52,7 +52,7 @@ local function HVRVRJ_fake_script() -- Background.LocalScript
 		for i = 0, 1, 0.1 do
 			background.BackgroundTransparency = i
 			image.ImageTransparency = i
-			wait(0.1)
+			wait(0.05)
 		end
 	end
 	
@@ -60,7 +60,7 @@ local function HVRVRJ_fake_script() -- Background.LocalScript
 		for i = 1, 0, 0.1 do
 			background.BackgroundTransparency = i
 			image.ImageTransparency = i
-			wait(0.1)
+			wait(0.05)
 		end
 	end
 	
@@ -70,4 +70,4 @@ local function HVRVRJ_fake_script() -- Background.LocalScript
 	setclipboard()
 	
 end
-coroutine.wrap(HVRVRJ_fake_script)()
+coroutine.wrap(ITVYTCT_fake_script)()
