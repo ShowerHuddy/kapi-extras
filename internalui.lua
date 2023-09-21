@@ -13,6 +13,7 @@ local TextEditor = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
 local UICorner_4 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
 local UI2 = Instance.new("Frame")
 local UICorner_5 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
@@ -24,6 +25,7 @@ local ScriptButton_3 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local ScriptButton_4 = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -94,13 +96,21 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.00999999978, 0, 0, 0)
+TextLabel.Position = UDim2.new(0.0780000016, 0, 0, 0)
 TextLabel.Size = UDim2.new(0, 148, 0, 32)
 TextLabel.Font = Enum.Font.ArialBold
 TextLabel.Text = "KAPI | Internal UI"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 18.000
 TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel.Parent = UI
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 32, 0, 32)
+ImageLabel.Image = "rbxassetid://14824239700"
 
 UI2.Name = "UI2"
 UI2.Parent = KAPIInternalUI
@@ -118,7 +128,7 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.0325328633, 0, 0, 0)
+TextLabel_2.Position = UDim2.new(0.173999995, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0, 136, 0, 32)
 TextLabel_2.Font = Enum.Font.ArialBold
 TextLabel_2.Text = "KAPI | ScriptHub"
@@ -182,32 +192,41 @@ ScriptButton_4.TextSize = 25.000
 
 UICorner_9.Parent = ScriptButton_4
 
+ImageLabel_2.Parent = UI2
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(-0.00379711809, 0, 0, 0)
+ImageLabel_2.Size = UDim2.new(0, 32, 0, 32)
+ImageLabel_2.Image = "rbxassetid://14824239700"
+
 -- Scripts:
 
-local function KCSOAFR_fake_script() -- ExecuteButton.execute 
+local function KFPPW_fake_script() -- ExecuteButton.execute 
 	local script = Instance.new('LocalScript', ExecuteButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent.TextEditor.Text)()
 	end)
 end
-coroutine.wrap(KCSOAFR_fake_script)()
-local function VJRCE_fake_script() -- ClearButton.clear 
+coroutine.wrap(KFPPW_fake_script)()
+local function TTFHE_fake_script() -- ClearButton.clear 
 	local script = Instance.new('LocalScript', ClearButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.TextEditor.Text = ''
 	end)
 end
-coroutine.wrap(VJRCE_fake_script)()
-local function NWJW_fake_script() -- UI.drag 
+coroutine.wrap(TTFHE_fake_script)()
+local function KLCNS_fake_script() -- UI.drag 
 	local script = Instance.new('LocalScript', UI)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(NWJW_fake_script)()
-local function KXUNBR_fake_script() -- KAPIInternalUI.shortcut 
+coroutine.wrap(KLCNS_fake_script)()
+local function FHAFMME_fake_script() -- KAPIInternalUI.shortcut 
 	local script = Instance.new('LocalScript', KAPIInternalUI)
 
 	local FrameObject1 = script.Parent.UI
@@ -232,15 +251,16 @@ local function KXUNBR_fake_script() -- KAPIInternalUI.shortcut
 		end
 	end)
 end
-coroutine.wrap(KXUNBR_fake_script)()
-local function WMIWC_fake_script() -- UI2.drag 
+coroutine.wrap(FHAFMME_fake_script)()
+local function KYWQY_fake_script() -- UI2.drag 
 	local script = Instance.new('LocalScript', UI2)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
+	
 end
-coroutine.wrap(WMIWC_fake_script)()
-local function ERQBSDY_fake_script() -- ScriptButton.LocalScript 
+coroutine.wrap(KYWQY_fake_script)()
+local function DGMDQQN_fake_script() -- ScriptButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -248,8 +268,8 @@ local function ERQBSDY_fake_script() -- ScriptButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(ERQBSDY_fake_script)()
-local function WPCVF_fake_script() -- ScriptButton_2.LocalScript 
+coroutine.wrap(DGMDQQN_fake_script)()
+local function WNUYCB_fake_script() -- ScriptButton_2.LocalScript 
 	local script = Instance.new('LocalScript', ScriptButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -257,8 +277,8 @@ local function WPCVF_fake_script() -- ScriptButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(WPCVF_fake_script)()
-local function NIELH_fake_script() -- ScriptButton_3.LocalScript 
+coroutine.wrap(WNUYCB_fake_script)()
+local function AZDGL_fake_script() -- ScriptButton_3.LocalScript 
 	local script = Instance.new('LocalScript', ScriptButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -266,8 +286,8 @@ local function NIELH_fake_script() -- ScriptButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(NIELH_fake_script)()
-local function QLCRXA_fake_script() -- ScriptButton_4.LocalScript 
+coroutine.wrap(AZDGL_fake_script)()
+local function LOOH_fake_script() -- ScriptButton_4.LocalScript 
 	local script = Instance.new('LocalScript', ScriptButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -275,4 +295,4 @@ local function QLCRXA_fake_script() -- ScriptButton_4.LocalScript
 	end)
 	
 end
-coroutine.wrap(QLCRXA_fake_script)()
+coroutine.wrap(LOOH_fake_script)()
